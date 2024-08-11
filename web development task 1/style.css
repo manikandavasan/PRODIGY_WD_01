@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+    nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #85cd88;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    }
+    nav li {
+    display: inline;
+    }
+    nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+    transition: background-color 0.3s, color 0.3s;
+    }
+    nav li a:hover {
+    background-color: #84df89;
+    }
+    section {
+    padding: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+    }
+    section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    }
+    #home {
+    color: white;
+    padding-top:30px;
+    text-align:center;
+    font-size:bold;
+    background-image:url("https://i.pinimg.com/originals/5e/00/09/5e0009dd4afefe567f4d77add6181574.jpg");
+    }
+    #about {
+    background-color: rgb(102, 147, 159);
+    background-image:url("https://foter.com/photos/416/old-world-living-room-sets-oakmere-truffle-living-room.jpg");
+    }
+    #services {
+    font-variant-position: sub;
+    font-size: larger;
+    text-align:center;
+    background-color:rgb(89, 143, 156);
+    }
+    #contact {
+    font-size: larger;
+    text-align:center;
+    background-color:rgb(72, 96, 102);
+    }
+    @media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    }
+    
+    nav li {
+    width: 100%;
+    }
+    nav li a {
+    text-align: left;
+    padding-left: 20px;
+    }
+    }
